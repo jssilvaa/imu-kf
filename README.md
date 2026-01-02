@@ -37,6 +37,7 @@ Flash `arduino/imu_logger/imu_logger.ino`.
 
 ### 2) Calibrate
 Option A (recommended): run 6-face accel calibration and export `data/calib/calib.json`.
+
 Option B (minimum): use flat (+Z) + upside-down (−Z) to get z scale/bias.
 
 ### 3) Run KF in MATLAB
