@@ -1,0 +1,7 @@
+Python libraries required for this project: 
+pyserial
+numpy
+scipy
+matplotlib
+pandas
+

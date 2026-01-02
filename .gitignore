@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Data/results (keep repo light)
+data/raw/*
+data/processed/*
+results/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!results/figures/.gitkeep
+
+# MATLAB
+*.asv
+*.m~
+
+# Arduino
+*.elf
+*.hex
+*.bin
+
+# OS
+.DS_Store
+Thumbs.db
+
