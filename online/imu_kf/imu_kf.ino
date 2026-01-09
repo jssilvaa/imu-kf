@@ -22,7 +22,7 @@ static const float ACC_SX = ACC_LSB_PER_G, ACC_SY = ACC_LSB_PER_G, ACC_SZ = ACC_
 // Gating accel measurement (static when ||a|| ~ 1g)
 static const float EPS_STATIC_G = 0.10f; // | ||a|| - 1 | < eps
                                          // i.e. in other words, measurement 
-                                        // is not accepted if 10% greater or less than expected 
+                                         // is not accepted if 10% greater or less than expected 
 
 // KF parameters (tune offline; results should go here ) 
 // Units:
@@ -190,7 +190,7 @@ void loop() {
       calibrate_gyro_bias_10s();
       streaming = true;
       Serial.println("1"); // handshake token expected by python after calib
-                          // from here on, it streams data which is parsed and used in the application 
+                           // from here on, it streams data which is parsed and used in the application 
     } else if (c == 's') {
       streaming = false;
     }
